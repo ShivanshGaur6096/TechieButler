@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>26</string>
+					<key>EndingLineNumber</key>
+					<string>40</string>
+					<key>StartingColumnNumber</key>
+					<string>12</string>
+					<key>StartingLineNumber</key>
+					<string>40</string>
+					<key>Timestamp</key>
+					<string>736341375.007319</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>TechieButlerTests/HomeScreenTests/HomeViewModelTests.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>XCTAssertEqual</string>
+				<key>leading</key>
+				<string>        // Then
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            </string>
+				<key>trailing</key>
+				<string>(self.viewModel.posts.count, 0)
+            self.expectation.fulfill()
+        }
+</string>
+			</dict>
+			<key>title</key>
+			<string>Check why we are getting error, is MockURLSession is not implemented correctly</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>
