@@ -7,6 +7,11 @@
 
 import CoreData
 
+// TODO: - Not Applicable
+/// For future implementation
+/// to present data offline, previously fetched
+/// so user can atleat read something
+/// and if internet is available, load new data
 struct PersistenceController {
     static let shared = PersistenceController()
 
