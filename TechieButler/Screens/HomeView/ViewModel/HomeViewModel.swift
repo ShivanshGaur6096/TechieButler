@@ -19,6 +19,9 @@ class HomeViewModel: ObservableObject {
     }
     
     func loadNextPage() {
+        // Record start time
+        let startTime = Date()
+        
         guard !isLoading else { return }
         isLoading = true
         
@@ -26,6 +29,8 @@ class HomeViewModel: ObservableObject {
         guard let url = URL(string: urlString) else { return }
         
         session.dataTask(with: url) { data, _, error in
+            // Record end time
+            let endTime = Date()
             guard let data = data, error == nil else {
                 print("\(Constants.ApiError.failedWithError) \(error?.localizedDescription ?? "Unknown error")")
                 DispatchQueue.main.async {
@@ -40,6 +45,10 @@ class HomeViewModel: ObservableObject {
                     self.posts.append(contentsOf: newPosts)
                     self.currentPage += 1
                     self.isLoading = false
+                    
+                    // MARK: Calculate elapsed time
+                    let elapsedTime = endTime.timeIntervalSince(startTime)
+                    print("Data fetching time: \(elapsedTime) seconds")
                 }
             } catch {
                 print("\(Constants.ApiError.decodingError) \(error)")
