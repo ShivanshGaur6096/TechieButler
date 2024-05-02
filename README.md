@@ -2,6 +2,8 @@
 
 TechieButler is a SwiftUI iOS application that fetches and displays posts from a public API endpoint. It aims to showcase best practices in iOS development, including data fetching, pagination, optimization techniques, and adherence to design principles.
 
+Checkout Project wroking [video](https://drive.google.com/drive/folders/1GqQxpEkgTupbnLcbzXhNOY61s-WhKSlK?usp=sharing)
+
 ## Features
 
 1. **Data Fetching and Rendering:**
