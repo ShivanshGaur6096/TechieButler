@@ -13,7 +13,6 @@
 		523C76942BE39C3500701D17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523C76932BE39C3500701D17 /* Preview Assets.xcassets */; };
 		523C76962BE39C3500701D17 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C76952BE39C3500701D17 /* Persistence.swift */; };
 		523C76992BE39C3500701D17 /* TechieButler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 523C76972BE39C3500701D17 /* TechieButler.xcdatamodeld */; };
-		523C76A32BE39C3500701D17 /* TechieButlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C76A22BE39C3500701D17 /* TechieButlerTests.swift */; };
 		523C76AD2BE39C3500701D17 /* TechieButlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C76AC2BE39C3500701D17 /* TechieButlerUITests.swift */; };
 		523C76AF2BE39C3500701D17 /* TechieButlerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C76AE2BE39C3500701D17 /* TechieButlerUITestsLaunchTests.swift */; };
 		523C76C52BE39D7D00701D17 /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C76C42BE39D7D00701D17 /* PostsModel.swift */; };
@@ -25,6 +24,7 @@
 		523C76D62BE3A65D00701D17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C76D52BE3A65C00701D17 /* Constants.swift */; };
 		523C76D92BE3AB2400701D17 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C76D82BE3AB2400701D17 /* PostDetailView.swift */; };
 		523C76DE2BE3B68F00701D17 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C76DD2BE3B68F00701D17 /* Int+Extension.swift */; };
+		523C76E02BE3BDF200701D17 /* OrdinalRepresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C76DF2BE3BDF200701D17 /* OrdinalRepresentationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,6 @@
 		523C76952BE39C3500701D17 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		523C76982BE39C3500701D17 /* TechieButler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TechieButler.xcdatamodel; sourceTree = "<group>"; };
 		523C769E2BE39C3500701D17 /* TechieButlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechieButlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		523C76A22BE39C3500701D17 /* TechieButlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechieButlerTests.swift; sourceTree = "<group>"; };
 		523C76A82BE39C3500701D17 /* TechieButlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechieButlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		523C76AC2BE39C3500701D17 /* TechieButlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechieButlerUITests.swift; sourceTree = "<group>"; };
 		523C76AE2BE39C3500701D17 /* TechieButlerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechieButlerUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		523C76D52BE3A65C00701D17 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		523C76D82BE3AB2400701D17 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		523C76DD2BE3B68F00701D17 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		523C76DF2BE3BDF200701D17 /* OrdinalRepresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdinalRepresentationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +135,8 @@
 		523C76A12BE39C3500701D17 /* TechieButlerTests */ = {
 			isa = PBXGroup;
 			children = (
+				523C76E22BE3BE0300701D17 /* ExtensionTests */,
 				523C76CD2BE39FD500701D17 /* HomeScreenTests */,
-				523C76A22BE39C3500701D17 /* TechieButlerTests.swift */,
 			);
 			path = TechieButlerTests;
 			sourceTree = "<group>";
@@ -270,6 +270,14 @@
 				523C76DD2BE3B68F00701D17 /* Int+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		523C76E22BE3BE0300701D17 /* ExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				523C76DF2BE3BDF200701D17 /* OrdinalRepresentationTests.swift */,
+			);
+			path = ExtensionTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,9 +427,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523C76E02BE3BDF200701D17 /* OrdinalRepresentationTests.swift in Sources */,
 				523C76D12BE3A05700701D17 /* MockURLSession.swift in Sources */,
 				523C76D32BE3A07700701D17 /* MockURLSessionDataTask.swift in Sources */,
-				523C76A32BE39C3500701D17 /* TechieButlerTests.swift in Sources */,
 				523C76CF2BE39FF400701D17 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
